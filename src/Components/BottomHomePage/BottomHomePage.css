@@ -1,0 +1,61 @@
+.PRODUCTS {
+  width: 182px;
+  height: 34px;
+  margin: 19px 532.2px 79.6px 534px;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.11;
+  letter-spacing: 5.6px;
+  text-align: center;
+  color: #363636;
+  position: absolute; /**/
+  z-index: 5; /**/
+}
+.Rectangle-67-copy {
+  width: 154px;
+  height: 46px;
+  margin: 0 627px 86.6px 467.2px;
+  background-color: #f9dfdf;
+}
+.header_container {
+  display: flex;
+  justify-content: center;
+}
+.scheduler-grid {
+    height: 100%;
+    margin: 50px 25px;
+    padding: 5px 100px;
+    display: grid;
+    grid-gap: 20px;
+    grid-auto-rows: 100px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+@media (max-width: 500px) {
+  .PRODUCTS {
+    width: 182px;
+    height: 34px;
+    margin: 19px 204.2px 48.6px 208.8px;
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.11;
+    letter-spacing: 5.6px;
+    text-align: center;
+    color: #363636;
+  }
+  .Rectangle-67-copy {
+    width: 154px;
+    height: 46px;
+    margin: 0 299px 55.6px 142px;
+    background-color: #f9dfdf;
+  }
+  .header_container {
+    display: block;
+  }
+}

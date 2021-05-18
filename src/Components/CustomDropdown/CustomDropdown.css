@@ -1,0 +1,9 @@
+.dropdown
+ {
+  width: 290px;
+  height: 50px;
+  margin: 10px 84px 30px 84px;
+  padding: 14px 18px 15px 21px;
+  border: solid 1px #d5d5d5;
+  background-image: linear-gradient(to top, #f7fcfb, #ffffff);
+}

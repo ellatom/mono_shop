@@ -1,0 +1,20 @@
+/* .flexContainer {
+    display: flex;
+    flex-wrap: wrap; 
+    /* height:50vh; */
+    /* background-color: cornflowerblue; */
+  /* } */ 
+
+  .gridContainer{
+    /* width:100%; */
+    display: grid;
+    /* grid-template-columns: auto auto auto auto; */
+    grid-template-columns: repeat(4, 320px);
+    grid-template-rows: repeat(3, 1fr);
+    place-content: center;
+    gap:1rem;
+    /* margin: 0 300px 0 300px; */
+  }
+  .gridContainer:hover{
+      cursor: pointer;
+  }

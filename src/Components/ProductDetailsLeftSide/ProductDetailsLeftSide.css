@@ -1,0 +1,17 @@
+.variants {
+  display: grid;
+  grid-template-columns: repeat(3, 127px);
+  grid-template-rows: repeat(auto, 127px);
+  place-content: center;
+  gap: 1.375rem;
+  margin-left: 358px;
+}
+div.variants > img {
+  width: 127px;
+  height: 127px;
+  object-fit: contain;
+  border: 1px black solid;
+}
+.variants:hover{
+  cursor: pointer;
+}

@@ -1,0 +1,86 @@
+.SPECTRUM {
+  width: 241px;
+  height: 53px;
+  margin: 0 502.5px 27.4px 506.5px;
+  font-family: Roboto;
+  font-size: 39.7px;
+  font-weight: 300;
+  font-stretch: condensed;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: 9.92px;
+  text-align: right;
+  color: #2c2b2a;
+}
+
+.SPECTRUM .text-style-1 {
+  color: #31a893;
+}
+  .HOME{
+    width: 44px;
+    height: 18px;
+    margin: 23px 603.6px 0 602.4px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.07;
+    letter-spacing: 0.38px;
+    text-align: right;
+    color: #31a893;
+    /* margin: 0 auto; */
+    margin-bottom: 37px;
+  }
+  .HOME:hover{
+    cursor: pointer;
+  }
+
+.Shape-46 {
+  width: 1250px;
+  height: 1px;
+  margin: 27.4px 0 23px;
+  background-color: #d7d7d7;
+}
+
+@media (max-width: 500px) {
+  .SPECTRUM {
+    width: 328px;
+    height: 72px;
+    margin: 0 104.8px 19.2px 107.2px;
+    object-fit: contain;
+    font-family: Roboto;
+    font-size: 3.375rem;/*54px;*/
+    font-weight: 300;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: 13.49px;
+    text-align: right;
+    color: #2c2b2a;
+  }
+  
+  .SPECTRUM .text-style-1 {
+    color: #31a893;
+  }
+  .HOME {
+    width: 74px;
+    height: 30px;
+    margin: 18px 232.4px 42px 233.6px;
+    font-family: Roboto;
+    font-size: 25.4px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: 0.63px;
+    text-align: right;
+    color: #31a893;
+  }
+  .Shape-46 {
+    width: 540px;
+    height: 1px;
+    margin: 19.2px 0 18px;
+    background-color: #d7d7d7;
+  }
+}

@@ -1,0 +1,41 @@
+.quantityText {
+    width: 60px;
+    height: 14px;
+    margin: 41px 42px 40px 92px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.07;
+    letter-spacing: 0.38px;
+    text-align: right;
+    color: #2c2b2a;
+  }
+  .add,
+.reduce {
+  width: 17px;
+  height: 17px;
+  margin: 40px 9px 38px 70px;
+  padding: 8px 4px 22px;
+  border: solid 1px #d5d5d5;
+  background-image: linear-gradient(to top, #f7fcfb, #ffffff);
+}
+.add {
+  margin: 40px 9px 38px 9px;
+}
+.reduce {
+  margin: 40px 9px 38px 9px;
+}
+.add:hover,.reduce:hover{
+    cursor: pointer;
+}
+.quantityToAdd {
+    width: 85px;
+    height: 40px;
+    margin: 30px 9px 25px;
+    padding: 14px 41px 14px 39px;
+    border-radius: 5px;
+    border: solid 0.3px #c4c4c4;
+    /* background-color: #c4c4c4; */
+  }

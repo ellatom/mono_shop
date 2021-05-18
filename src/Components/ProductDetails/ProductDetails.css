@@ -1,0 +1,134 @@
+.dropdown
+ {
+  width: 290px;
+  height: 50px;
+  margin: 76px 84px 30px 84px;
+  padding: 14px 18px 15px 21px;
+  border: solid 1px #d5d5d5;
+  background-image: linear-gradient(to top, #f7fcfb, #ffffff);
+}
+.colors_dropdown,
+.sizes_dropdown,
+.waist_sizes_dropdown,
+.leg_sizes_dropdown,
+.fabric_types_dropdown
+ {
+  width: 290px;
+  height: 50px;
+  margin: 76px 84px 30px 84px;
+  padding: 14px 18px 15px 21px;
+  border: solid 1px #d5d5d5;
+  background-image: linear-gradient(to top, #f7fcfb, #ffffff);
+}
+.sizes_dropdown,
+.waist_sizes_dropdown,
+.leg_sizes_dropdown,
+.fabric_types_dropdown {
+  margin: 8px 84px 30px 84px;
+}
+
+.btn_addToCart {
+  width: 290px;
+  height: 51px;
+  margin: 8px 84px 30px 84px;
+  padding: 18px 99px 19px 98px;
+  box-shadow: 0px 1px 3px 0 rgba(7, 7, 8, 0.46);
+  background-image: linear-gradient(to top, #31a893, #34ceb3);
+}
+.btn_addToCart>span {
+  width: 93px;
+  height: 14px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.72;
+  letter-spacing: 0.45px;
+  text-align: right;
+  color: #ffffff;
+}
+
+
+.dropdown_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 36px;
+}
+.middle_side_title {
+    width: 402px;
+    height: 27px;
+    margin: 76px 58px 12px 33px;
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.11;
+    letter-spacing: 0.7px;
+    /* text-align: right; */
+    color: #2c2b2a;
+}
+.middle_side_price {
+  width: 57px;
+  height: 17px;
+  margin: 44px 429px 14px 33px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.72;
+  letter-spacing: 0.45px;
+  text-align: right;
+  color: #2c2b2a;
+}
+.middle_side_description {
+  display: flex;
+  flex-direction: column;
+  width: 402px;
+  height: 139px;
+  margin: 38px 84px 207px 33px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: 0.38px;
+  text-align: left;
+  color: #2c2b2a;
+}
+.side_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.large_image{
+    width: 425px;
+    height: 425px;
+    margin: 69px 33px 22px 391px;
+    object-fit: contain;
+}
+.head-bar-copy {
+  width: 2000px;
+  height: 128px;
+  margin: 0 0 53.4px;
+  padding: 30.6px 375px 22px;
+  background-color: #f7fcfb;
+  /* display: flex;
+  justify-content: center; */
+
+}
+
+
+@media (max-width: 500px) {
+.head-bar-copy {
+  width: 640px;
+  height: 175px;
+  margin: 0 0 53.4px;
+  padding: 19.8px 51px 15px 49px;
+  background-color: #f7fcfb;
+}
+}

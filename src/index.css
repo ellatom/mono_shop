@@ -1,0 +1,25 @@
+:root{
+  box-sizing: border-box;
+  padding:0px;
+  margin:0px;
+}
+body{
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 500px) {
+
+  /* body{
+    height: 100vh;
+    overflow: hidden;
+
+  } */
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    width:100%;
+  }
+}
