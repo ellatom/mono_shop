@@ -36,4 +36,7 @@
     height: 127px;
     /* margin: 0 auto; */
   }
+  .title, .price{
+    font-size: 12px;
+  }
 }
