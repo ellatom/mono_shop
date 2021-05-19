@@ -115,6 +115,7 @@
   width: 2000px;
   height: 128px;
   margin: 0 0 53.4px;
+  /* width: 540px; */
   padding: 30.6px 375px 22px;
   background-color: #f7fcfb;
   /* display: flex;
@@ -125,10 +126,14 @@
 
 @media (max-width: 500px) {
 .head-bar-copy {
-  width: 640px;
+  /* width: 640px;
   height: 175px;
   margin: 0 0 53.4px;
   padding: 19.8px 51px 15px 49px;
+  background-color: #f7fcfb; */
+  width: 100%;
+  margin: 0 auto;
+  padding: 10.8px 0px 0px 0px;
   background-color: #f7fcfb;
 }
 }

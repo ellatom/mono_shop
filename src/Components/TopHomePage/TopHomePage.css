@@ -45,12 +45,13 @@
 
 @media (max-width: 500px) {
   .SPECTRUM {
-    width: 328px;
-    height: 72px;
-    margin: 0 104.8px 19.2px 107.2px;
+    /* width: 328px;
+    height: 72px; */
+    /* margin: 0 104.8px 19.2px 107.2px; */
+    margin: 0 auto;
     object-fit: contain;
     font-family: Roboto;
-    font-size: 3.375rem;/*54px;*/
+    font-size: 2rem;/*54px;*/
     font-weight: 300;
     font-stretch: condensed;
     font-style: normal;
@@ -64,23 +65,18 @@
     color: #31a893;
   }
   .HOME {
-    width: 74px;
-    height: 30px;
-    margin: 18px 232.4px 42px 233.6px;
+    width: 100%; 
+    margin: 0 auto;
     font-family: Roboto;
     font-size: 25.4px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.22;
     letter-spacing: 0.63px;
-    text-align: right;
     color: #31a893;
+    text-align: center;
   }
   .Shape-46 {
-    width: 540px;
     height: 1px;
-    margin: 19.2px 0 18px;
+    margin: 0 auto;
     background-color: #d7d7d7;
   }
 }

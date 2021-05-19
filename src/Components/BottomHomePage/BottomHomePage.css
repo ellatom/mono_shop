@@ -36,7 +36,7 @@
 
 @media (max-width: 500px) {
   .PRODUCTS {
-    width: 182px;
+    /* width: 182px;
     height: 34px;
     margin: 19px 204.2px 48.6px 208.8px;
     font-family: Roboto;
@@ -47,12 +47,25 @@
     line-height: 1.11;
     letter-spacing: 5.6px;
     text-align: center;
+    color: #363636; */
+    margin: 0 auto;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.11;
+    letter-spacing: 5.6px;
     color: #363636;
   }
   .Rectangle-67-copy {
-    width: 154px;
+    /* width: 154px;
     height: 46px;
     margin: 0 299px 55.6px 142px;
+    background-color: #f9dfdf; */
+    width: 64px;
+    height: 22px;
+    margin: 20px 0px 18.6px 103px;
     background-color: #f9dfdf;
   }
   .header_container {

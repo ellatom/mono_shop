@@ -17,7 +17,7 @@ class BottomHomePage extends React.Component {
             this.setState({ products: response });
         }
         catch (error) {
-            this.setState({ apiError: error });
+            this.setState({ apiError: error }); 
         }
     }
 
