@@ -1,4 +1,4 @@
-
+import './ProductDetailsMiddleSide.css'
 
 const ProductDetailsMiddleSide = (props) => {
 

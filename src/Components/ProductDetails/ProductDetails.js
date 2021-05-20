@@ -9,13 +9,15 @@ import ProductDetailsLeftSide from "../ProductDetailsLeftSide/ProductDetailsLeft
 
 class ProductDetails extends React.Component {
 
-    state = { productDetails: [], attributes:[],
-               title: "", price: "", description: "",
-               images: [], mainImage: [] }
+    state = {
+        productDetails: [], attributes: [],
+        title: "", price: "", description: "",
+        images: [], mainImage: []
+    }
 
     componentDidMount = async (props) => {
 
- 
+
         let productId = this.props.match.params.id;
         let productDetails = await api.getProductByID(productId);
         this.setState(productDetails);
@@ -27,22 +29,22 @@ class ProductDetails extends React.Component {
         this.setImages(productDetails);
     }
 
-    setDropdown=(productDetails)=>{
- 
+    setDropdown = (productDetails) => {
+
         let attributes = [];
         let labels = [];
-        let attributeName ="";
-        productDetails.data.attributes.forEach(item=>{
-            attributeName= item.title;
-            item.labels.forEach(item=>{
-                labels.push({id:item.id,title:item.title});
+        let attributeName = "";
+        productDetails.data.attributes.forEach(item => {
+            attributeName = item.title;
+            item.labels.forEach(item => {
+                labels.push({ id: item.id, title: item.title });
             })
-            attributes.push({attributeName:attributeName,labels:labels});
-            labels=[];
+            attributes.push({ attributeName: attributeName, labels: labels });
+            labels = [];
         })
-        console.log("atrributes"+attributes);
+        console.log("atrributes" + attributes);
 
-        this.setState({attributes: attributes});
+        this.setState({ attributes: attributes });
     }
     setTitle = (productDetails) => {
         let titleVariant = productDetails.data.variants[0].title;
@@ -75,30 +77,33 @@ class ProductDetails extends React.Component {
         mainImage.push({ mainImageURL, imageID });
         this.setLargeImage(mainImage);
     }
-    setLargeImage=(mainImage)=>{
+    setLargeImage = (mainImage) => {
         this.setState({ mainImage: mainImage });
     }
 
     render() {
-        const {images,mainImage,attributes,title,price,description}  = this.state;
+        const { images, mainImage, attributes, title, price, description } = this.state;
         return (
             <div>
                 <TopHomePage />
                 <div className="side_container">
                     <div className="left_side_content">
-                        <ProductDetailsLeftSide images={images} mainImage={mainImage}/>
+                        <ProductDetailsLeftSide images={images} mainImage={mainImage} />
                     </div>
-                    <div className="middle_side_content">
-                        <ProductDetailsMiddleSide title={title} price={price} description={description} />
-                    </div>
-                    <div className="right_side_content"><div className="dropdown_container">
-                        <div className="dropdown_container">
-                            <Dropdown attributes={attributes} />
+                    <div className="side_container">
+                        <div className="middle_side_content">
+                            <ProductDetailsMiddleSide title={title} price={price} description={description} />
                         </div>
-                    </div>
+                        <div className="right_side_content"><div className="dropdown_container">
+                            <div className="dropdown_container">
+                                <Dropdown attributes={attributes} />
+                            </div>
+                        </div>
                         <QuantityBar />
                         <div className="btn">
                             <button className="btn_addToCart"><span>Add to cart</span></button>
+                        </div>
+
                         </div>
                     </div>
                 </div>
@@ -109,7 +114,7 @@ class ProductDetails extends React.Component {
 export default ProductDetails;
 
  // <Dropdown colors={colors} sizes={sizes} waistSizes={waistSizes} legSizes={legSizes} fabricTypes={fabricTypes}/> 
-                           
+
     // setColors = (productDetails) => {
     //     let colorsLabels = productDetails.data.attributes.filter(item => item.title === "Color");
     //     this.setState({ colors: colorsLabels[0] })
