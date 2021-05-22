@@ -39,3 +39,12 @@
     border: solid 0.3px #c4c4c4;
     /* background-color: #c4c4c4; */
   }
+
+  @media (max-width: 500px) {
+  .quantity_container{
+    margin: 0 auto;
+  }
+  .quantityText{
+    margin: 41px 42px 40px 63px;
+  }
+}

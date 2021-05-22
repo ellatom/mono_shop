@@ -15,3 +15,23 @@ div.variants > img {
 .variants:hover{
   cursor: pointer;
 }
+
+@media (max-width: 500px) {
+.variants {
+  display: grid;
+  grid-template-columns: repeat(3, 104px);
+  /* grid-template-rows: repeat(auto, 127px); */
+  place-content: center;
+  grid-gap: 1rem;
+  margin: 0 auto;
+}
+div.variants > img{
+  width: 98px;
+  height: 98px;
+}
+.large_image{
+  margin:0 auto;
+  width: 343px;
+  height: 343px;
+}
+}

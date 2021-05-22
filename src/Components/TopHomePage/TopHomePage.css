@@ -44,6 +44,7 @@
 }
 
 @media (max-width: 500px) {
+
   .SPECTRUM {
     /* width: 328px;
     height: 72px; */
@@ -51,7 +52,7 @@
     margin: 0 auto;
     object-fit: contain;
     font-family: Roboto;
-    font-size: 2rem;/*54px;*/
+    font-size: 1.375rem;/*54px;*/
     font-weight: 300;
     font-stretch: condensed;
     font-style: normal;
@@ -68,7 +69,7 @@
     width: 100%; 
     margin: 0 auto;
     font-family: Roboto;
-    font-size: 25.4px;
+    font-size: 1rem;
     line-height: 1.22;
     letter-spacing: 0.63px;
     color: #31a893;

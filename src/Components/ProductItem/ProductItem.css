@@ -39,4 +39,10 @@
   .title, .price{
     font-size: 12px;
   }
+  .large_image {
+    width: 360px;
+    height: 360px;
+    /* margin: 0 auto; */
+    object-fit: contain;
+}
 }

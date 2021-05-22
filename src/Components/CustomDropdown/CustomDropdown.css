@@ -7,3 +7,9 @@
   border: solid 1px #d5d5d5;
   background-image: linear-gradient(to top, #f7fcfb, #ffffff);
 }
+
+@media (max-width: 500px) {
+.dropdown{
+  margin: 10px 0px 30px 0px;
+}
+}

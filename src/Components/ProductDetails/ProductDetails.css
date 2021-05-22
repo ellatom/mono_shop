@@ -1,5 +1,4 @@
-.dropdown
- {
+.dropdown {
   width: 290px;
   height: 50px;
   margin: 76px 84px 30px 84px;
@@ -11,8 +10,7 @@
 .sizes_dropdown,
 .waist_sizes_dropdown,
 .leg_sizes_dropdown,
-.fabric_types_dropdown
- {
+.fabric_types_dropdown {
   width: 290px;
   height: 50px;
   margin: 76px 84px 30px 84px;
@@ -35,7 +33,7 @@
   box-shadow: 0px 1px 3px 0 rgba(7, 7, 8, 0.46);
   background-image: linear-gradient(to top, #31a893, #34ceb3);
 }
-.btn_addToCart>span {
+.btn_addToCart > span {
   width: 93px;
   height: 14px;
   font-family: Roboto;
@@ -49,25 +47,24 @@
   color: #ffffff;
 }
 
-
 .dropdown_container {
   display: flex;
   flex-direction: column;
   margin-top: 36px;
 }
 .middle_side_title {
-    width: 402px;
-    height: 27px;
-    margin: 76px 58px 12px 33px;
-    font-family: Roboto;
-    font-size: 28px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.11;
-    letter-spacing: 0.7px;
-    /* text-align: right; */
-    color: #2c2b2a;
+  width: 402px;
+  height: 27px;
+  margin: 76px 58px 12px 33px;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.11;
+  letter-spacing: 0.7px;
+  /* text-align: right; */
+  color: #2c2b2a;
 }
 .middle_side_price {
   width: 57px;
@@ -105,11 +102,11 @@
   justify-content: center;
 }
 
-.large_image{
-    width: 425px;
-    height: 425px;
-    margin: 69px 33px 22px 391px;
-    object-fit: contain;
+.large_image {
+  width: 425px;
+  height: 425px;
+  margin: 69px 33px 22px 391px;
+  object-fit: contain;
 }
 .head-bar-copy {
   width: 2000px;
@@ -120,26 +117,37 @@
   background-color: #f7fcfb;
   /* display: flex;
   justify-content: center; */
-
 }
-
 
 @media (max-width: 500px) {
-/* .head-bar-copy {
-  /* width: 640px;
-  height: 175px;
-  margin: 0 0 53.4px;
-  padding: 19.8px 51px 15px 49px;
-  background-color: #f7fcfb; */
-  /* width: 100%;
-  margin: 0 auto;
-  padding: 10.8px 0px 0px 0px;
-  background-color: #f7fcfb;
-}  */
-.side_container{
-  display: flex;
+  
+  .dropdown_container {
+      /* float: right; */
+      margin: 0 auto;
+  }
+  
+  .side_container {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+  }
+  .btn_addToCart {
+    margin: 0 auto;
+    padding: 18px 99px 19px 98px;
+  }
+  .btn_addToCart > span {
+    display: block;
+  }
+  .head-bar-copy{
+    width: unset;
+    height: 128px;
+    margin: 0 auto;
+    width: unset;
+    padding: unset;
+    background-color: #f7fcfb;
+  }
 }
