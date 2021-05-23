@@ -42,11 +42,20 @@
 
   @media (max-width: 500px) {
   .quantity_container{
-    margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .quantityToAdd{
+    padding: 0 5px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px 38px;
+    height: unset;
+    width: unset;
+    margin: unset;
   }
   .quantityText{
-    margin: 41px 4px 40px 41px;
+    margin: unset;
   }
 }

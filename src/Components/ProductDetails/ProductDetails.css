@@ -120,17 +120,19 @@
 }
 
 @media (max-width: 500px) {
-  
   .dropdown_container {
-      /* float: right; */
-      margin: 0 auto;
-      margin-top: 15px;
+    /* float: right; */
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 250px;
+    margin: 0 auto;
   }
-  
+
   .side_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0px 5px 0px 5px;
   }
   .btn {
     display: flex;
@@ -138,17 +140,22 @@
   }
   .btn_addToCart {
     margin: 0 auto;
-    padding: 18px 99px 19px 98px;
+    padding: 18px 99px 18px 75px;
+    width: 250px;
   }
   .btn_addToCart > span {
     display: block;
   }
-  .head-bar-copy{
+  .head-bar-copy {
     /* width: unset;
     height: 128px;
     margin: 0 auto; */
     width: unset;
     padding: unset;
     background-color: #f7fcfb;
+  }
+  .middle_side_content{
+    width: 250px;
+    margin: 0 auto;
   }
 }

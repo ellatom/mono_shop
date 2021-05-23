@@ -1,16 +1,20 @@
 @media (max-width: 500px) {
 .middle_side_title {
     font-size: 1.375rem;
+    margin: unset;
     margin-top: 36px;
+    margin-bottom: 14px;
     width: unset;
+    height: auto;
 }
 .middle_side_price{
-    margin: 34px 429px 14px 33px;
+    margin: unset;
+    height: auto;
 }
 .middle_side_description{
-    /* margin: 38px 84px 0px 33px; */
-    width: 349px;
+    width: 250px;
     height: auto;
     margin: 0 auto;
+    margin-top: 30px;
 }
 }

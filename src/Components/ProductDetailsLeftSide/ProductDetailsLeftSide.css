@@ -19,20 +19,21 @@ div.variants > img {
 @media (max-width: 500px) {
   .variants {
     display: grid;
-    grid-template-columns: repeat(3, 104px);
+    grid-template-columns: repeat(3, 73px);
     /* grid-template-rows: repeat(auto, 127px); */
     place-content: center;
     grid-gap: 1rem;
     margin: 0 auto;
+    margin-bottom: 10px;
   }
   div.variants > img {
-    width: 98px;
-    height: 98px;
+    width: 70px;
+    height: 70px;
   }
   .large_image {
     margin: 0 auto;
-    width: 343px;
-    height: 343px;
+    width: 250px;
+    height: 250px;
     justify-content: center;
     display: flex;
     margin-bottom: 1rem;
