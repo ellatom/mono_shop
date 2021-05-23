@@ -37,7 +37,7 @@ class BottomHomePage extends React.Component {
             <div>
                 <div className="header_container">
                     <div className="PRODUCTS">Products</div>
-                    <div className="Rectangle-67-copy"></div>
+                    <span className="Rectangle-67-copy"></span>
                 </div>
 
                 <div className="grid-container"  onClick={(event)=>this.showProductDetails(event)} >

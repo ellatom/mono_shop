@@ -59,16 +59,13 @@
     color: #363636;
   }
   .Rectangle-67-copy {
-    /* width: 154px;
-    height: 46px;
-    margin: 0 299px 55.6px 142px;
-    background-color: #f9dfdf; */
     width: 64px;
     height: 22px;
-    margin: 20px 0px 18.6px 103px;
+    margin: 0px 0px 18.6px -63px;
     background-color: #f9dfdf;
   }
   .header_container {
-    display: block;
+    margin-bottom: 20px;
+    position: relative;
   }
 }
