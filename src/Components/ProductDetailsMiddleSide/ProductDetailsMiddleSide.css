@@ -2,12 +2,15 @@
 .middle_side_title {
     font-size: 1.375rem;
     margin-top: 36px;
+    width: unset;
 }
 .middle_side_price{
-    margin: 11px 429px 14px 33px;
+    margin: 34px 429px 14px 33px;
 }
 .middle_side_description{
-    margin: 38px 84px 0px 33px;
+    /* margin: 38px 84px 0px 33px; */
     width: 349px;
+    height: auto;
+    margin: 0 auto;
 }
 }

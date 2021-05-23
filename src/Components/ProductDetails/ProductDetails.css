@@ -124,6 +124,7 @@
   .dropdown_container {
       /* float: right; */
       margin: 0 auto;
+      margin-top: 15px;
   }
   
   .side_container {
@@ -143,9 +144,9 @@
     display: block;
   }
   .head-bar-copy{
-    width: unset;
+    /* width: unset;
     height: 128px;
-    margin: 0 auto;
+    margin: 0 auto; */
     width: unset;
     padding: unset;
     background-color: #f7fcfb;

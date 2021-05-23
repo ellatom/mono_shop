@@ -43,8 +43,10 @@
   @media (max-width: 500px) {
   .quantity_container{
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
   }
   .quantityText{
-    margin: 41px 42px 40px 63px;
+    margin: 41px 4px 40px 41px;
   }
 }
