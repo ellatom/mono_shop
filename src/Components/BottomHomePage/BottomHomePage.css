@@ -23,6 +23,7 @@
 .header_container {
   display: flex;
   justify-content: center;
+  width: 2000px;
 }
 .scheduler-grid {
     height: 100%;
@@ -67,5 +68,6 @@
   .header_container {
     margin-bottom: 20px;
     position: relative;
+    width: unset;
   }
 }
