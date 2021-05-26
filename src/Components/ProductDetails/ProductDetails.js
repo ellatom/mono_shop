@@ -12,7 +12,8 @@ class ProductDetails extends React.Component {
     state = {
         productDetails: [], attributes: [],
         title: "", price: "", description: "",
-        images: [], mainImage: []
+        images: [], mainImage: [],quantity:1,
+        variantId:0
     }
 
     componentDidMount = async (props) => {
@@ -20,7 +21,7 @@ class ProductDetails extends React.Component {
 
         let productId = this.props.match.params.id;
         let productDetails = await api.getProductByID(productId);
-        this.setState(productDetails);
+        this.setState({productDetails:productDetails});
 
         this.setDropdown(productDetails);
         this.setTitle(productDetails);
@@ -33,13 +34,16 @@ class ProductDetails extends React.Component {
 
         let attributes = [];
         let labels = [];
+
+        let attributeId = 0;
         let attributeName = "";
         productDetails.data.attributes.forEach(item => {
             attributeName = item.title;
+            attributeId =item.id;
             item.labels.forEach(item => {
                 labels.push({ id: item.id, title: item.title });
             })
-            attributes.push({ attributeName: attributeName, labels: labels });
+            attributes.push({attributeId:attributeId, attributeName: attributeName, labels: labels });
             labels = [];
         })
         console.log("atrributes" + attributes);
@@ -80,7 +84,40 @@ class ProductDetails extends React.Component {
     setLargeImage = (mainImage) => {
         this.setState({ mainImage: mainImage });
     }
+    addToCart=async(event)=>{
+        console.log(this.state.variantId);
+        
+        let added= this.state.variantId &&
+                   this.state.quantity && 
+                //    this.state.attributes.length === &&
+                   await api.addToCart(this.state.variantId,this.state.quantity);
+        debugger;
+        console.log("PRODUCT ADDED: "+added.data);
+    }
+    sendDropdownData=async(val)=>{
+        if(val!==[])
+        {
+            let variant= this.findVariantId(val);
+            variant[0] && await this.setState({variantId:variant[0].id});
+        }
+        console.log(this.state.variantId);
+    }
+    findVariantId=(val)=>{
+        return this.state.productDetails && 
+                      this.state.productDetails.data.variants.filter(variant=>{
+                      return variant.labels.some(label=>{
+                            return label.attribute_id=== Object(val[0]).dropdownId && 
+                            label.label_id === Object(val[0]).optionIndexValue
+                        })
+                    })
+        
+       //{dropdownId: "1", dropdownName: "Color", optionIndex: 2, optionIndexValue: "31", optionName: "White"}
 
+    }
+    getQuantity=(val)=>{
+        debugger;
+        this.setState({quantity:val});
+    }
     render() {
         const { images, mainImage, attributes, title, price, description } = this.state;
         return (
@@ -96,12 +133,12 @@ class ProductDetails extends React.Component {
                         </div>
                         <div className="right_side_content"><div className="dropdown_container">
                             <div className="dropdown_container">
-                                <Dropdown attributes={attributes} />
+                                <Dropdown attributes={attributes} sendDropdownData={this.sendDropdownData}/>
                             </div>
                         </div>
-                        <QuantityBar />
+                        <QuantityBar getQuantity={this.getQuantity}/>
                         <div className="btn">
-                            <button className="btn_addToCart"><span>Add to cart</span></button>
+                            <button className="btn_addToCart" onClick={this.addToCart}><span>Add to cart</span></button>
                         </div>
 
                         </div>

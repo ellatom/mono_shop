@@ -3,9 +3,14 @@ import './Dropdown.css';
 
 const Dropdown = (props) => {
 
+    const sendDropdownData=(val)=>{
+       
+        props.sendDropdownData(val);
+
+    }
     let dropdowns = props.attributes && props.attributes.map(item => {
         return (
-            <CustomDropdown item={item} />
+            <CustomDropdown item={item} sendDropdownData={sendDropdownData}/>
         )
     })
 
